@@ -1,0 +1,209 @@
+Agenda :
+------------
+1.Group management
+2.File management
+  file permissions
+  linux file structure
+  file compression formates
+
+ls -l :- Is command which is used for long list
+
+ls -a
+
+1.Group Management :
+----------------------
+Whatsapp group 
+
+class :- We will create one group
+
+IAM :- Groups --- We will add users to group and  
+
+Developers :-developers :- 
+
+read write and execute 
+
+Admin :- root 
+
+sudo su :- super user do 
+
+1.how to create the groups :
+------------------------------
+groupadd <group-name>
+
+2.How to check the group is created or not :
+---------------------------------------------
+cat /etc/group
+
+3.How to add a user to a group :
+------------------------------------
+syntax :- usermod -a -G group user-name
+
+Example :- usermod -a -G wdde13 skillrary
+
+4.I want to change a group-name:-
+--------------------------------------
+groupmod -n <new-group> <old-group>
+
+5.getent :- 
+----------------------------------------
+
+synatx :- getent group 
+        
+          getent passwd
+
+6.How to Remove the user from group:-
+--------------------------------------
+synatx :- gpasswd -d user-name groupname
+
+gpasswd -d qspiderds best-batch
+
+7.TO delete the group :
+------------------------
+synatx :- groupdel <group-name>
+
+File management :
+-------------------------
+1./bin :- Binaries
+
+2./etc :- (et-see) Linux system configuation files 
+
+3./home :- with the name of user directory will get created in this group
+
+4./tmp :- cache Temporary 
+
+5./opt :- 
+
+6./usr :- It is location where user programs will get store
+
+============================================================================
+File permissions :
+
+https://chmod-calculator.com/
+--------------------
+iam :- ec2full access--s3
+
+read write execute 
+
+chmod 777 <file or directory>
+
+7       7        7
+owner  group    others 
+
+7:- 4+2+1(rwx)
+
+4:- read 
+2 :- write
+1 :- Execute
+
+drwx    r-x    r-x
+  owner group  others
+d:- directory
+
+--- --- ---
+-wx rw- r-x
+
+365
+
+3:- owner 2+1 :- write& execute
+ 
+6: group :- 4+2 :- read+write
+
+5 :- others :- 4+1 :- read+execute
+
+--wx :-= owner
+rw-:- group(read and write)
+r-x :- others(read and execute)
+
+1.Ashish :- owner :- execute
+            group :- read              ---xr--r-x
+            others :- read and execute
+
+2.gourav :- owner :- read, write
+            group :- execute, read           rw-r-xrwx
+            others :- execute,read,write
+
+3.teja :- owner :- read and write       rw-rwx-w-
+           group :- read write,execute
+          others :- write
+
+4.pooja :- owner :- read and exeute
+           group :- execute and write   -r-x-wx--x
+           others :- execute
+
+5.sreedhar :- owner :- read
+              group :- execute
+              others :- write.read,execute
+
+
+==================================================================
+
+= :- u=rwx  :- owner(u) :- u=rx
++ :- g+x It is indicating adding the persmissions
+- :- o-w it is indicating removing the permissions
+
+chmod u=rw,g+r,o-r <file-name>
+
+=======================================================
+File compressions :
+-----------------------
+
+tar(tape archive) :- 
+
+synatx :- tar cvf <file.tar> <file1,file2.file3>
+tar cvf wdde13.tar <files>
+
+c:- create
+v:- verbosely(information)
+f:- file
+
+How to Extract the file :
+----------------------------
+
+tar xvf <file-name.tar>
+
+x:- extract
+v:- verbosly
+f:- file
+
+==================================================
+2.zip :-
+------
+It is a one of the archive formate by using this we are going to compress the files
+
+zip <file.zip> files
+
+unzip <file.zip>
+=====================================================
+
+3.gzip :- (gnu zip) 
+
+gzip <file-names>
+
+Extracting :
+----------------
+
+gzip -d <file.gz> 
+
+
+networking commands
+Disk utility
+input output
+filter commands
+crontab 
+
+
+Presenation Linux :- saturday (7pm-9PM)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

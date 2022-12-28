@@ -1,0 +1,177 @@
+Linux
+Shell scripting
+Git,github
+Maven
+jenkins  :- 
+agile                       3 weeks 
+Jira 
+
+----------------------------------------------------------------------------
+Agenda :
+-------------
+1.Operating system
+2.Types of os
+3.linux
+4.linux flovers
+5.diff between linux and windows
+6.basic commands 
+
+1.Operating system :-
+---------------------
+
+Usa :- I need talk in english ---Kannda
+
+Operting system can understand only Binary lang
+
+010101
+
+User ---Input--- hardware 
+
+To overcome Operating system
+
+Operating system is an Interface between a computer hardware and user 
+
+user will pass the input in human readble lang ---Operating system will convert an Human Readble lang 
+into Machine readble lang
+
+Which performs the basic tasks like File management,Memory management,process management,handling input and output
+managemntand Controling Peripheral devices such as disk and printers...
+
+Diff types of Operating system :
+---------------------------------
+1.Windows
+2.Linux 
+3.ubuntu
+4.unix
+5.macos
+6.Android
+7.Blackberry
+8.IBM
+9.msdos 
+
+History of linux :
+--------------------------
+Linus Torvalds in the person one who developed Kernal 1991
+
+kernal is develoepd in c lang 
+
+Kernal+GNU soFtware lice :- Linux Operting system
+
+Linux is Free and open source 
+
+Linux Distribution :
+--------------------
+1.ubuntu
+2.Redhat
+3.Kali linux
+4.fedora
+5.centos
+6.Arch linux
+7.Debain 
+8.Rocky Linux 
+
+
+
+-----Etc
+
+Unix --paid version
+Kernal :
+----------------
+kernal is core part of Operating system, It establish commnunication between devices and software ...
+
+
+Command:-
+-----------
+It is program or utility it will run on the top command line, A command line is an interface that 
+accepts lines of text and process them into instructions for system..  
+
+Basic commands:-
+----------------------
+launch one ec2-t2.micro 
+
+1.mkdir :- Make directory (create directory)
+
+Folders are called as directory in Linux 
+
+Synatx :- mkdir <directory-name>
+
+example :-mkdir skillrary
+
+2.ls :- it will display the list of directorys and files which all are present in 
+working directory
+
+3.pwd :- Present working directory 
+
+sudo su
+
+sudo su -
+
+/ :- root 
+
+/home/ec2-user
+
+sudo su - :- /
+
+sudo su :- /home/ec2-user
+===========================================================
+4.touch :- It is used to create a file
+
+syntax :- touch <file-name>
+
+example:- touch qspiders.txt , class.java.... 
+
+5.cd :- change directory (working directory)
+
+synatx :- cd <dir-name>
+
+example :- cd skillrary
+
+I want switch to my previous directory :- cd ..
+
+6.whoami :- It is used to get the user name 
+
+synatx :- whoami
+
+7.Editors :- it is used to modify the files
+
+linux :- vi,nano,vim...
+
+windows :- notepad,Editplus
+
+Working with VI :-
+--------------------------
+vi <file-name>
+
+to change the mode of editor :- i(insert)
+
+To save and close :- esc shift+:, wq
+
+:wq 
+
+w:- write 
+q:- quite
+
+8.cat :- it is used to display the content present inside the file....
+
+syntax  :- cat <file-name>
+
+
+Assigment :
+--------------------
+1.What is os
+2.Types of os
+3.Linux(history)
+4.Linux Distribution
+5.Basic commands 
+
+
+
+
+
+
+
+
+
+
+
+
