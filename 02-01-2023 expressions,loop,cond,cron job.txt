@@ -1,0 +1,181 @@
+Shell scripting  :
+------------------
+1.Expressions
+2.Looping
+3.Conditional statements 
+4.cron job
+
+1.Expressions :-
+-----------------
+1.Arithmetic operator :- +,-,*,/.%,=,==,!=
+
+2.Logical opertors 
+
+-eq :- Equality condition
+-ne :- not equal
+-gt :- greater than 
+-ge :- greater then or equal to
+-lt :- less then
+-le :- less the or equal to
+
+ex 1 :-
+
+var1=15
+var2=24
+sum=$(($var1 + $var2))
+
+echo the value of sum is$sum
+
+
+ex 2:-
+----
+echo "enter the value of x and y"
+read x
+read y
+
+sum=`expr $x + $y`
+
+echo $sum
+
+Note :-
+--------
+-x is for debug the script
+====================================
+For string :-
+-----------------
+length of the string :
+----------------------
+
+x=skillrary
+
+len=`expr length $x`
+
+echo $len
+
+or 
+
+read x
+
+len=`expr length $x`
+echo $len
+
+========================================
+Looping Statements :
+-----------------------
+test eng :- login in 60sec ---10000 users 
+
+looping :- 1lakh 
+
+
+for loop :
+---------------
+for x in file1 file2 file3
+
+do 
+echo $x
+done
+
+for <var-name> in <cond-range>
+
+do 
+
+echo ""
+
+done
+=============================
+for var in 1 2 3 4 5
+
+do
+
+echo $var
+
+$((var++)
+
+done
+=========================
+
+tables :
+----------
+read number
+
+for var in {1..10}
+do
+echo $((var*number))
+done
+
+---------------------------
+
+read number
+
+for var in {1..10..2}
+do
+echo $((var*number))
+done
+
+`expr $var * $number `
+
+How to list the files :
+-----------------------
+for i in *
+do
+echo $i
+done
+--------------------------------------------
+
+While loop :
+------------
+
+bank balance ---1 sec (lakh)
+
+1min :- 50k
+
+init=1
+
+while [[ ${init} -le 10 ]]
+do
+echo $init
+((init++))
+done
+
+tables :
+--------------
+read -p "enter the value of number " number
+
+init=1
+
+while [[ ${init} -le 10 ]]
+
+do 
+echo $((init*number))
+((init++))
+done  
+
+
+until :
+----------
+i=0
+
+until [[ $i -eq 4 ]]
+do
+echo $i
+((i++))
+done
+
+
+Assignment:
+--------------
+1.Give 5 examples on expressions
+2.while loop by using gt,ne,ge,lt,le
+3.write a script by using  -,*,/,
+
+
+
+
+
+
+
+
+
+
+
+

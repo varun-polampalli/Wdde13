@@ -1,0 +1,211 @@
+Agenda :
+-----------
+1.Linux input and output redirection
+2.Error redirection
+3.Networking commands
+4.Disk Utility
+5.Package managers
+
+Group Mangement :- creating group :- groupadd <group-name>
+                   how to add a user to group :- usermod -a -G <grp-name> <user-name> 
+                   
+File management
+   file structure
+   file compression :- tar :- tar cvf <file-name.tar> <file1 file2>
+   file permissions :- 
+
+chmod 777 <directory-name>
+
+owner :- read 
+7:- 4+2+1= 
+
+4=read
+2=write
+1=Execute
+
+chmod 4
+
+chmod 777 *
+==============================================================================
+ssh :- secure shell
+
+cd downloads :- where pem file present
+
+ssh -i "pemfile" ec2-user@public-ip
+
+Input output and error redirection :
+-----------------------------------------
+1.input :- <
+By using this commands we are going achive the task of collecting the input from the files..
+
+cat < <file-name>
+
+wc -l < file-name
+
+wc -c < file-name
+
+wc -w < file-name 
+==================================================================================
+
+2.output :- >
+
+By using this outpur redirection we are going to pass an output to some other files 
+
+java
+
+echo "java is installed" >> result.txt
+
+maven
+
+jenkins 
+
+ cat result.txt >> new.txt
+
+ cat result.txt > new.txt
+=====================================================
+ > :- override\
+
+cat > file.name
+
+>> :- Append 
+
+it will store old data along with new data
+============================================================
+
+3.error :- 2> redirection
+===================
+What ever the error we are getting in the terminal by using error redirection we will redirect the
+error to any files
+
+zcho "hello" 2> error.txt
+
+tonch file1 2> <file> 
+====================================================================
+
+2.Networking commands:
+---------------------------
+1.ping(packet information groper)
+VPC :- 
+
+develop one software :- vpc
+
+birthday wishes
+
+ping <ip> <birthday.com>
+
+response speed 
+
+public ip
+
+we can check the whether the application is append running or not
+
+ping facebook.com
+==================================================================
+
+2.dig(domain information groper)
+------------------------------------
+DNS
+
+dig instagram.com
+
+3.nslookup :
+------------------
+we are going get the information about the domain
+
+nslookup <software.com>
+
+
+4.ifconfig:
+-----------------------
+we can get the ip related information of our system
+
+5.route:-
+-------------------
+To get the information about the routing table for manipultaing the ips 
+
+synatx :- route
+
+========================================================
+
+6.netstat :
+--------------
+Gathering the information about routing tables,connections,interface statics ,ports
+
+synatx :- netstat 
+
+ip:8080
+
+7.host <software.com>
+
+8.how to check the login information of users
+
+by using last command
+
+synatx :- last
+
+=========================================
+man :- to get the manul of the system
+
+help :- to get the details about the commands
+====================================================================
+4.Disk utility :
+--------------------
+mount spaces 
+We are going gather the information about disk spaces
+
+mobiles :- 128gb ram :- storage  
+
+linux :- cli:- i want to get the information about the disk spaces 
+
+1.fdisk(for fixed disk):- 
+------------------------------
+synatx :- fdisk -l
+
+2.disk usuage :
+--------------------
+df 
+
+df -h :- in human redable lang 
+
+to know about availble,used space,total space 
+
+3.Parted :
+-----------------
+parted -l 
+
+4.lsblk (list block):-
+-------------------------
+
+
+Remaianing:
+----------------
+filter commands
+cronjobs
+
+
+Assigments :
+-------------------
+1.What is the use of input output and error redirection.
+2.Use of networking commands and list the commands. 
+3.Disk utility along with list of commands.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

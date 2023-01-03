@@ -1,0 +1,246 @@
+Agenda :
+-----------
+Filter commands
+cronjobs
+
+
+Networking Commands
+Disk Utility 
+input output redirection
+error redirection
+
+
+Filter Commands :
+---------------------
+Fileter commands for filter the data 
+
+File :
+----------
+vtu
+collegs
+branches 
+students
+
+70
+=====================================================================
+1.head :
+-----------------
+Head is a one of the filter commands 
+when we use head by defualt it will print starting 10 lines
+
+and if we want we can print the specified number of lines.
+
+example :
+------------
+ashish ece 80%
+gourav ece 75%
+sreedhar cs 90%
+teja is 88%
+saikeerthi fd 80%
+pooja cs 75%
+ajay mech 70%
+rajesh mech 75%
+kanthraj civil 70%
+bharath eee 65%
+guru vt 80%
+
+syntax :- head <file-name> :- By default 10lines
+    
+          head -n 4 file-name :- spefied number of lines
+
+          head -c 7 file-name :- spefied the number of characters
+
+ctrl+s :- saving the data
+
+ctrl+x for exit from the file
+
+2.tail :-
+-----------
+It is used to filter the data from bottom of the file 
+
+tail <file-name>
+
+tail -n <number> <file-name> :- The spefied number of lines
+
+tail -c <num> <file-name> :- to print the specified number of char
+
+varun 
+
+tail -c 4 
+
+3.Pipeline command :
+-----------------------
+By using filter commands we are going to achive the task of 
+passing a output of 1st command as an input to 2nd command 
+
+example :- head -5 <file> | tail -2
+
+           ls | cat <file>
+
+           tail -5 <file> | head -2
+
+======================================================================
+4.sort :
+---------------
+Achiving the task of displaying the data in ascending or descending order ..
+
+synatx :- sort <file-name>:- ascending order according to ASCCI
+
+          sort -r <file-name> :- Descending order 
+
+          sort -n <file-name> :- based on numbers 
+
+5.uniq :
+-------------------------
+It is used for eliminate the duplicate data from the file 
+
+synatx :- uniq <file-name>
+
+          uniq -c <file-name> :- We can get the information of dulplicate data's number of 
+                                 occurance
+
+          uniq -d <file-name> :- we can get the information of only duplicated data
+                                 (display only duplicate data)..
+
+
+1
+1
+1
+2
+2
+3
+3
+
+1
+2
+1
+2
+1
+2
+
+6.cat :
+----------
+synatx :- cat <old-file> > new-file
+
+          cat <file1 file2>  > newfile.txt :- to copying the data of multiple files into a single 
+                                               file
+
+
+7.cut :- 
+--------------
+-b :- position of the char
+
+cut -b <num> File-name 
+
+cut -b <rang(n-n) file-name
+
+8.find :- 
+-------------
+to check that whether the data is present or not 
+
+find <file or dire>
+
+9.sleep :- 
+----------------
+if we use this the operation will sleep for the specified timings
+
+=========================================================
+
+10.grep :- (global regular expression print):
+---------------------------------------------------
+Filter the contnet of the file.
+
+syntax :- grep <search-word> <file-name>
+
+example :- grep 80% students.txt
+===========================================================
+
+12.sed:- stream editor :
+-------------------------------
+The editing is not permananet.it remains in display, the actul content remain same ...
+
+synatx :-
+--------------
+1.changing the data
+------------------------
+
+sed 's/old-data/new-data/' file-name
+
+2.where ever i have changed the data i want to print the data once again:
+-----------------------------------------------------------------------------
+
+sed 's/old-data/new-data/p' file-name
+
+3.Replace the nth line:
+-----------------------------
+
+synatx :- sed 'nth line s/old-data/new-data/' file-name
+
+4.sed 'nth line s/old-data/new-data/p' file-name
+
+if we mention p then only it will print or else it won't print
+
+5.Delete the line or content :
+---------------------------------- 
+synatx :- 
+
+sed '3d' file
+
+6.By using pipeline command
+-------------------------------
+
+echo world | sed 's/world/asia/'
+
+13.tr :- translate :
+-------------------------------------
+echo "hi" | tr hi HI
+
+14.awk :
+---------------
+It is similar to sed command
+
+awk is used for text processing 
+
+it is a powerfull command in linux 
+
+*)Features of awk :
+-------------------
+1.it scans a file line by line
+2.it splits a file into multiple fields
+3.it performs various actions on file like searching a spefied text and more 
+4.it formates the output lines
+
+etc ......
+
+1.awk '/option/{print}' file
+
+awk '/mech/ {print}' students.txt
+
+2.To print the specified column 
+
+awk '{print $2,$3}' file-name
+
+3.Now i want to print a serial number along with a contnet :
+---------------------------------------------------------------
+awk '{print NR,$0}' file
+
+
+Assigmment :
+------------------
+1.what is the use of filter commands
+2.What is the use of AWK.
+3.what is the use of sed.
+4.Execute all commands once again and prepare a ppt along with a screen shot..
+
+
+Cronjob :- once shell 
+
+3-4 days 
+
+Linux is complted 
+
+shell scripting 
+
+
+
+

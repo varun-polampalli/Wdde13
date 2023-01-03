@@ -1,0 +1,291 @@
+Agenda :
+----------
+1.Cronjob
+2.Array
+3.case-esac statements
+4.Conditional statements
+
+1.CronJob:Scheduling the jobs
+--------------
+It is like a alram 
+
+Scheduling the jobs 
+
+we are having one application called student-info :- i need to check the 
+                                                     number of applications
+on the daily basis at 6.30pm i want to check..
+
+Shell :- ksh,csh,bash,zshell--etc
+
+Working with cronjob/crontab:
+-----------------------------
+step 1 :- We need to create a one shell script 
+
+          #!/bin/bash
+
+          echo "hello world" >> cron.txt
+
+step 2 :- Give the execute permission for cron.sh file
+
+setp 3 :-  
+
+#!/bin/bash
+
+echo "hello world" >> cron.txt
+
+date >> cron.txt
+
+step 3 :- here we are scdeduling the jobs
+
+crontab -e
+
+* * * * * /home/ec2-user/cronjobs/cron.sh
+
+* :- min
+
+* :- hour
+
+* :- Day of the month
+
+* :- Month of the year
+
+* :- day of the week
+
+step 4 :- To check the output
+
+tail -f xron.txt
+
+====================================================
+Shceduling the jobs 
+
+crontab -e :- Shcedule the jobs :- scripts 
+
+* * * * * /home/ec2-user/cron.sh
+created one script with 
+
+cron.sh
+
+echo "hello world" >> /home/ec2-user/cron.txt 
+=========================================================
+
+crontab -r :- to remove the jobs
+
+crontab -l :- list the jobs
+==========================================================
+
+Conditional statements:
+--------------------------
+based on the conditions the scripts will get execute
+
+1.if
+2.if-else
+3.Else-if
+
+1.If :- it will get execute if the condition is true or else it will not 
+         print any thing
+
+
+echo "enter the number"
+
+read number
+
+if [[ $number -lt 100 ]]
+
+then 
+
+echo "$number is less the 100"
+
+fi
+
+if-else :-
+----------
+If the condition is true then it will Execute if part or else it will Execute else part
+
+To check whether number is even or odd:
+---------------------------------------
+
+read no
+
+if [[ `expr $no % 2` == 0 ]]
+then 
+
+echo "the $no is even number"
+
+else
+echo "the $no is odd"
+
+fi
+
+
+2)10(
+  10
+ -----
+  00
+
+Odd :
+-----
+
+read no
+
+if [[ `expr $no % 2` == 1 ]]
+then 
+
+echo "the $no is even number"
+
+else
+echo "the $no is odd"
+
+fi
+==============================
+
+Else-If :-
+--------------
+
+read number
+
+if [[ `expr $number % 2` == 1 ]]
+
+then 
+
+echo "$number is odd"
+
+elif [[ `expr $number % 2` == 0 ]]
+
+then 
+
+echo "$number is Even"
+
+fi
+
+
+======================================
+switch
+
+case-esac statements
+---------------------------
+It will execute based on the options choosed by the user
+
+mcq :- a b c d 
+
+echo "enter the fruit name"
+
+read fruit
+
+case $fruit in
+
+apple) 
+
+   echo "this is apple block"
+;;
+
+butter-fruit)
+
+echo "this is butter fruit block"
+;;
+
+orange)
+
+echo "this is orange block"
+;;
+
+*) 
+
+ echo "this a defualt blocK"
+;;
+
+esac
+
+
+====================================================================
+Calculator script by using case-esac :
+==================================================
+echo "enter the operator"
+
+read opr
+
+case $opr in
+
++)
+
+echo "enter the value of a and b"
+read a 
+read b
+
+echo `expr $a + $b`
+;;
+
+-) 
+
+echo 'enter the value of c and d"
+
+read c
+read d
+
+echo `expr $c - $d`
+;;
+
+\*)
+
+echo "enter the value of e and f"
+
+read e
+read f
+
+echo `expr $e \* $f`
+
+;;
+
+/)
+
+echo "enter the value of x and y"
+
+read x
+
+read y 
+
+echo `expr $x / $y`
+
+;;
+
+*) 
+
+echo "this is a default block"
+
+;;
+esac
+
+
+Array:
+----------------
+An array is a collection of Items of some data type stored at contiguous memory location
+
+arr=(ashish gourav saikeerthi sreedhar pooja teja)
+      0      1       2          3       4     5
+
+echo ${arr[@]:0}
+
+echo ${arr[@]:1}  #print the data from the specific items
+
+echo ${arr[2]}   #print only specific condition
+
+echo ${arr[3]}
+
+echo ${arr[@]:3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
