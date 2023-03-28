@@ -1,0 +1,181 @@
+Linux 
+
+Shell scripting 
+
+linux :-
+Kernal+GNU
+
+KERNAL :- kernal is a heart of the operating system, kernal will act like a interface between shell and
+          hardware.
+
+shell :-
+-------
+
+GUI :- Graphical user interface... 
+
+If i click on any task by using gui the operation will hit to shell , shell will execute the task
+it will send Request to kernal in binary language ..
+
+
+use of shell scripting in our it indstry :
+----------------------------------------------
+as a linux admin we need to monitor the servers and systems 
+
+disk spaces, cpu utilization 
+
+we will write a script 
+
+
+set up the server 
+
+jenkins 
+
+install the jenkins repo
+key
+epel
+java
+jenkins
+
+package managers 
+update 
+
+programs :- we need to follow the syntax , compilers and interpretor 
+ scripting lang  :- scripting will not follow the syntax ,intrepretor 
+
+discuss how to write a shell script:
+----------------------------------------
+#!/bin/bash     #shibang line  
+
+ 
+echo "this is the working directory"
+pwd
+
+echo "user name"
+whoami 
+
+Package managers :
+
+linux,centos :- yum 
+ubunut :- apt 
+--------------------
+yum update -y
+
+echo "update is done"
+
+yum install java -y
+echo "java installation is done"
+
+
+
+Varibles :
+-----------
+Variable is a named memeory allocation which is used to store the data and it can be chnaged n number 
+times during a execution.
+
+x=10  c=25
+
+echo $x
+
+$ is used to call the varible
+
+nano :- ctrl+s, ctrl+x
+
+vi :- esc :wq
+
+
+3 types :
+----------
+1.Environmental variables
+
+unset 
+
+readonly 
+
+a=20
+
+unset a 
+
+echo the value of a is $a
+
+-===========================
+readonly :
+----------
+x=17
+readonly x
+x=13
+echo $x
+
+Combine both unset and readonly 
+-----------------------------------
+b=13
+readonly b
+unset b
+
+output:-
+-------------
+line 3: unset: b: cannot unset: readonly variable
+
+b is readonly we are not having write permission for the variable we cant able to modify
+
+2.System defined variables:
+------------------------------
+In our system predefined variables 
+
+HOME
+echo $PWD
+echo $HOME
+echo $HOSTNAME
+echo $OSTYPE
+
+3.user defined variables 
+--------------------------------
+
+wish=Advance happy new year to all
+year=2023
+
+echo $wish $year 
+
+
+shell script will support string 
+
+read :- it is used to take the input from the user
+
+Addition
+=========================================
+echo "enter the value of x"
+read x       #collect the input from the user
+
+echo "enter the value of y"
+read y       #collect the input from the user
+
+sum=`expr $x + $y`   #by using expression we are going to add the values 
+
+echo the addition of x and y is  $sum 
+
+echo enter the value of a
+read a
+
+echo enter the value of b
+read b
+
+sum=`expr $a + $b`
+
+echo $sum
+
+
+echo "enter the value of x" 
+read x  
+echo "enter the value of y" 
+read y  
+sum=`expr $x + $y` 
+echo $sum
+
+echo enter a 
+read a 
+echo enter b 
+read b 
+sum=`expr $a + $b` 
+echo $sum
+
+
+

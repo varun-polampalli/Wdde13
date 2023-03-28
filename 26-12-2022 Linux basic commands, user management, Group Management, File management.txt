@@ -1,0 +1,169 @@
+Agenda :
+-----------------
+1.Basic commands
+2.uname
+3.User management
+4.Group Management 
+5.file management 
+
+Operting system
+Types of Operting system
+Linux ---(history,what is linux)
+
+Kernal ---Android,washing machine,Cd 
+
+Binary lang ----
+======================================================================
+1.Mkdir :- Make directory
+2.cd :- change directory
+3.cd .. :- Parent directory
+4.touch :- create a file
+5.pwd :- present working directory
+6.cat :- display the content 
+7.ls :- list the files or directory
+
+ls -a
+ls -l 
+8.whoami :- to know the user 
+9.vi/nano/vim :- Editors 
+
+1.cat :- 
+
+*) cat > <file-name> :- to override the data 
+
+syntax :- cat > <file-name>
+
+*) cat >> file-name :- Append the data 
+
+syntax :- cat >> <file-name>
+
+2.cp :- it is used to Copy data
+
+synatx :- cp <source> <destination>
+
+Asia/india/delhi
+
+/india/army/bsf,air force, navy 
+
+/skillrary/asia/india/delhi
+
+/skillrary/asia/india/army---copy the data in delhi 
+
+Task :
+--------------
+india/karanatak/kannda,telugu
+
+india/Andhra/telugu,kannda
+
+3.mv :- it is used to move the data
+
+syntax :- mv <source> <destination>
+
+bangalore/qspiders
+
+bangalore/devops
+
+4.If we want to delete the files we need to use
+
+rm :- It is used to remove the files
+
+synatx :- rm <file-name>
+
+rm -f <file-name> :- force fully 
+
+5.If we want delete the directory
+
+rmdir :- remove directory
+
+rm -rf :- to remove the non empty diretory 
+
+6.echo/printf :- Just for printing the data
+
+echo "hello"
+
+printf "hello"
+
+7.For clear the screen :- ctrl+l or clear
+
+8.cal :- It is used to print the calendar
+
+cal 
+
+cal <month>
+
+cal <mon> <year>
+
+9.date :- it is used display the data along with time
+
+syntax :- date 
+==================================================================
+uname :- It is used to know about kernal name along with system information
+like version,os, machine, kernal release 
+
+1.uname -r :- To know about the release
+
+2.uname -v :- To know about version 
+
+3.uname -m :- To know about machine
+
+4.uname -o :- To know about os
+
+5.uname -a :- To know about compltet information.
+===================================================
+
+user management:-
+-------------------
+For creating the user
+
+1.GUI
+2.CLI :- by using commands
+3.By modifying the file :- /etc/passwd
+
+u and ur brother :- 
+
+u :- add some important data
+
+brother :- games
+
+user management :-  if u will create a user 
+
+dev1 and dev2 :- 
+
+IAM :- identity access managment 
+
+1.useradd :- Which is used to create the user.
+
+2./etc/passwd :- To get the user information. 
+
+3.passwd <user-name> :- To set the password for user
+
+4.openssl :- Encrypted password for security puporse 
+
+syntax :- openssl passwd <user-name>
+
+5.chage -l <user-name> :- To gether the information about password..
+
+6.su - <user-name> :- to login as a user
+
+7.userdel :- delete the user
+
+syntax :- userdel <user-name>
+
+Assignment :
+--------------
+1.list all the commands which we are discussed till today
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
